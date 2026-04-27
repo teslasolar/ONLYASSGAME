@@ -1,0 +1,29 @@
+name: "🏷️ Tag Write"
+description: "Add a scenario, pipe, or game config"
+title: "tag: "
+labels: ["tag-write"]
+body:
+  - type: dropdown
+    id: udt
+    attributes:
+      label: Type
+      options:
+        - Pipe
+        - Scenario
+        - Config
+    validations:
+      required: true
+  - type: input
+    id: tag_id
+    attributes:
+      label: Tag ID
+      placeholder: "scenario:new-one"
+    validations:
+      required: true
+  - type: textarea
+    id: body_json
+    attributes:
+      label: Data (JSON)
+      render: json
+    validations:
+      required: true
