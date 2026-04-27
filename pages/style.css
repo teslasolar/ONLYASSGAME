@@ -1,0 +1,47 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;background:#040408;color:#aac;
+  font-family:'Courier New',monospace;overflow-x:hidden}
+.screen{display:none;min-height:100vh;padding:16px}
+.screen.col{flex-direction:column;align-items:center;justify-content:center}
+h1{color:#4a9a44;font-size:28px}
+h2{color:#9b3da0;font-size:42px;font-weight:900}
+.sub{color:#8cc88a;font-size:12px;letter-spacing:3px;margin:8px 0}
+.dim{color:#445;font-size:9px;text-align:center}
+.pipes{display:flex;gap:4px;margin:16px 0}
+.pipes .p{width:22px;height:22px;border-radius:11px;display:flex;
+  align-items:center;justify-content:center;color:#fff;font-size:10px}
+.formula{color:#334;font-size:8px;margin:4px 0}
+.btn{display:inline-block;padding:10px 28px;border-radius:6px;
+  background:#4a9a44;color:#fff;font:bold 11px monospace;cursor:pointer;
+  border:none;margin:12px 0;letter-spacing:1px}
+.btn:hover{background:#5aba54}
+#p-pipe{font-size:11px}
+#p-score{color:#8cc88a;font-size:10px;float:right}
+#p-setup{color:#fff;font-size:13px;line-height:20px;margin:16px 0}
+#p-rule{background:#1a1e28;padding:8px 10px;border-radius:5px;
+  color:#ffaa00;font-size:10px;margin:8px 0}
+.label{color:#4a9a44;font-size:9px;letter-spacing:2px;margin:12px 0 6px}
+.choice{padding:10px;margin:4px 0;border:1px solid #1a1e28;border-radius:6px;
+  background:#080c14;cursor:pointer;font-size:11px;line-height:16px;
+  transition:border-color 0.2s}
+.choice:hover{border-color:#4a9a44}
+#p-streak{color:#ffaa00;font-size:9px;margin-top:6px}
+#r-result{font-size:18px;font-weight:bold;margin:8px 0}
+#r-mult{color:#667;font-size:9px}
+.rchoice{padding:10px;margin:4px 0;border-radius:6px;font-size:10px;line-height:15px}
+.rchoice.good{background:#0a1a0a}
+.rchoice.bad{background:#1a0a0a}
+.why{margin-top:4px;font-size:9px}
+.rchoice.good .why{color:#4a9a44}
+.rchoice.bad .why{color:#9b3da0}
+.you{color:#445;font-size:7px;margin-top:2px}
+#r-lesson{margin:12px 0;font-size:10px;line-height:15px}
+#r-score{color:#8cc88a;font-size:11px;margin:4px 0}
+#r-coherent{color:#d4a94a;font-size:11px;font-weight:bold}
+#x-s5{font-size:32px;font-weight:900}
+#x-msg{font-size:12px;letter-spacing:2px;margin:4px 0}
+#x-score{color:#8cc88a;font-size:16px;margin:16px 0}
+#x-formula{color:#d4a94a;font-size:9px}
+#x-stats{color:#556;font-size:9px;margin:8px 0}
+#x-wisdom{color:#889;font-size:10px;text-align:center;margin:12px 0}
+.tagline{color:#334;font-size:8px;margin-top:16px;text-align:center}

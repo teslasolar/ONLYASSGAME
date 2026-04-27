@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<title>OnlyASS · Break a Rule</title>
+<link rel="stylesheet" href="pages/style.css">
+</head>
+<body>
+
+<div id="menu" class="screen col">
+  <h1>ONLY</h1>
+  <h2>A.S.S.</h2>
+  <div class="sub">BREAK A RULE</div>
+  <div class="dim">7 pipes · 7 rules · 1 truth<br>
+    the smart move is the one they said not to make</div>
+  <div class="pipes" id="menu-pipes"></div>
+  <div class="formula">2 × 3 × 5 × 7 × 11 × 13 × 17 = 510,510</div>
+  <button class="btn" onclick="start()">LIFT THE COVER</button>
+  <div class="tagline">something stinks? good.<br>that means the system is working.</div>
+</div>
+
+<div id="play" class="screen">
+  <div id="p-pipe"></div><span id="p-score"></span>
+  <div id="p-setup"></div>
+  <div id="p-rule"></div>
+  <div class="label">BREAK IT?</div>
+  <div id="p-choices"></div>
+  <div id="p-streak"></div>
+</div>
+
+<div id="reveal" class="screen">
+  <div id="r-result"></div>
+  <div id="r-mult"></div>
+  <div id="r-choices"></div>
+  <div id="r-lesson"></div>
+  <div id="r-score"></div>
+  <div id="r-coherent"></div>
+  <button class="btn" onclick="advance()">NEXT →</button>
+</div>
+
+<div id="results" class="screen col">
+  <div id="x-s5"></div>
+  <div id="x-msg"></div>
+  <div id="x-score"></div>
+  <div id="x-formula"></div>
+  <div id="x-stats"></div>
+  <div id="x-wisdom"></div>
+  <div class="tagline">something stinks? good.<br>that means the system is working.</div>
+  <button class="btn" onclick="restart()">PLAY AGAIN</button>
+</div>
+
+<script src="pages/pipes.js"></script>
+<script src="pages/scenarios.js"></script>
+<script src="pages/game.js"></script>
+<script>
+const mp=document.getElementById('menu-pipes');
+PIPES.forEach(p=>{const d=document.createElement('div');
+d.className='p';d.style.background=p.color;d.textContent=p.glyph;
+mp.appendChild(d);});
+</script>
+</body></html>
